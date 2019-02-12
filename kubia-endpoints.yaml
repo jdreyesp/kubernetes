@@ -1,0 +1,11 @@
+kind: Endpoints
+apiVersion: v1
+metadata:
+  name: kubia-replicaset
+subsets:
+  - addresses:
+      - ip: 172.17.0.3
+      - ip: 172.17.0.4
+      - ip: 172.17.0.5
+    ports:
+      - port: 8080

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: jenkins
+spec:
+  containers:
+  - image: jenkins
+    name: kubia
+    ports:
+    - containerPort: 8080 #purely informational
+      protocol: TCP
